@@ -14,8 +14,8 @@ Note LaTeX is used to render pdf documents from RMarkown. If you are having any 
 
 *Optionally* you can also install these two pieces of software. 
 
--   [Git](http://mc-stan.org/): Version control software.
--   [docker](https://github.com/paul-buerkner/brms): "Containerization" software for virtual operating systems and computing environments.
+-   [Git](https://git-scm.com/): Version control software.
+-   [docker](https://www.docker.com): "Containerization" software for virtual operating systems and computing environments.
 
 These two pieces of software -- Git and Docker -- relate to the last topic of the course, but this is essentially just an overview and introduction, and so it is not necessary to install these two piece of software.
 
