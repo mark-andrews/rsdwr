@@ -10,9 +10,9 @@ There are a few pieces of software to install:
     use R the modern way.
 -   [LaTeX](https://www.latex-project.org/): To make high quality reports with RMarkdown, we need to use LaTeX, which is software that is external to R. Unless you already use LaTeX, the easiest thing to do to use LaTeX in R is to install `tinytex`.
 
-Note LaTeX is used to render pdf documents from RMarkown.
+Note LaTeX is used to render pdf documents from RMarkown. If you are having any difficulty with installing LaTeX using `tinytex`, it will not be a major loss. We will still be able to use RMarkdown, but just not by rendering pdf documents.
 
-Optionally you can also install these two pieces of software. If you are having any difficulty with installing LaTeX using `tinytex`, it will not be a major loss. We will still be able to use RMarkdown, but just not by rendering pdf documents.
+*Optionally* you can also install these two pieces of software. 
 
 -   [Git](http://mc-stan.org/): Version control software.
 -   [docker](https://github.com/paul-buerkner/brms): "Containerization" software for virtual operating systems and computing environments.
