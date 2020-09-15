@@ -12,6 +12,8 @@ output:
     fonttheme: "serif"
     includes:
       in_header: slides_preamble.tex
+bibliography: references.bib
+bibliography-style: apalike
 ---
 
 ```{r, include = F}
@@ -51,6 +53,7 @@ knitr::include_graphics('include/2019-07-06-145233_3286x1080_scrot.png')
   * Git & GitHub 
   * Make or Drake (and other build automation tools)
   * Jupyter
+  * R packages
   * Docker and virtual machines
   * Git LFS, Git annex, Git fat, etc
   
@@ -140,3 +143,6 @@ cat(htmltools::includeText("include/rmarkdown-example-chunk-5.Rmd"))
 
 ```{r, child = 'include/rmarkdown-example-chunk-5.Rmd'}
 ```
+
+
+# References
