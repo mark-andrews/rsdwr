@@ -1,0 +1,81 @@
+---
+title: 'Data Analysis: A report'
+author: "Mark Andrews"
+date: "September 15, 2020"
+output: pdf_document
+bibliography: myrefs.bib
+header-includes:
+- \usepackage{float}
+- \usepackage{booktabs}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(echo = FALSE,
+                      message = FALSE,
+                      warning = FALSE)
+                    
+```
+
+
+
+*Hello* **world**.
+
+```{r load_packages, echo= T}
+library(tidyverse)
+library(pander)
+library(knitr)
+library(kableExtra)
+
+set.seed(10101)
+data_df <- tibble(x = rnorm(100),
+                  y = x + rnorm(100)
+)
+```
+
+# Analysis
+
+```{r, echo =T}
+model <- lm(y ~ x, data = data_df)
+S <- summary(model)
+```
+
+As you can see in Figure \ref{fig:scatterplot}.
+
+The $R^2$ is `r round(S$r.squared, 3)`.
+
+```{r scatterplot, out.width="0.67\\textwidth", fig.align="center", fig.cap="This is a scatterplot."} 
+ggplot(data_df,
+       aes(x = x, y = y)
+) + geom_point() + theme_classic()
+```
+
+$$
+\begin{aligned}
+y_i &\sim N(\mu_i, \sigma^2), \\
+\mu_i &= \beta_0 + \beta_i x_i
+\end{aligned}
+$$
+
+# Results
+
+```{r, echo =T}
+pander(S$coefficients, digits = 1)
+```
+
+It was highly significant, $p \ll 0.001$.
+
+
+## Coefficients
+
+```{r, echo = T}
+kable(S$coefficients, 
+      format = 'latex',
+      digits = 2,
+      booktabs = TRUE) %>% 
+  kable_styling(position = 'center')
+```
+
+It is well known that chaos is cool [see @levy1994chaos;@boccaletti2000control].
+
+
+# Bibliography
