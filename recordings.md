@@ -5,7 +5,7 @@ These are password protected, and you will have been given this password separat
 
 * [Session 1: 9am to 11am](https://vimeo.com/458878833)
 * [Session 2: 12pm to 2pm](https://vimeo.com/458879991)
-* [Session 3: 3pm to 5pm](https://vimeo.com/458879991)
+* [Session 3: 3pm to 5pm](https://vimeo.com/458881030)
 
 # Day 2
 
